@@ -1,0 +1,33 @@
+* {
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #59CE8F;
+}
+
+.textAreab64 {
+  display: block;
+  width: 700;
+  padding-left: 30;
+  margin: 50px 50px;
+}
+
+.textAreab64 .mainTitle{
+  position: relative;
+  right: 440px;
+  width: 30%;
+}
+
+.textAreab64 .mainTitle h2{
+  color: #E8F9FD;
+  background-color: #e23821;
+}
+
+.textAreab64 .textEncode h4{
+  color: #E8F9FD;
+}
+
+

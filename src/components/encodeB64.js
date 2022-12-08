@@ -1,21 +1,26 @@
 import React from "react";
-import "./App.css";
+import "../styles/App.css";
 import { Textarea } from "evergreen-ui";
 import { decode as base64_decode, encode as base64_encode } from "base-64";
 
-export default function App() {
+export default function EncodeB64() {
   const [summary, setSummary] = React.useState("");
   let encoded = base64_encode(summary);
   return (
     <div className="textAreab64">
-      <h4>Cifrador/Descifrador en Base64</h4>
+      <div className="mainTitle">
+         <h2>Cifrador en Base64</h2>
+      </div>
+      <br></br>
       <Textarea
         width="40%"
         onChange={(e) => setSummary(e.target.value)}
         placeholder="Ingresa aquí el texto"
       />
       <br></br>
-      <p>Texto cifrado: {encoded}</p>
+      <div className="textEncode">
+        <h4>Texto cifrado: {encoded}</h4>
+      </div>
     </div>
   );
 }
