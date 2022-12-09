@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #59CE8F;
+body {
+  background-color: #497c61;
 }
 
 .textAreab64 {
@@ -15,19 +15,17 @@ body{
   margin: 50px 50px;
 }
 
-.textAreab64 .mainTitle{
+.textAreab64 .mainTitle {
   position: relative;
-  right: 440px;
-  width: 30%;
+  right: 30%;
+  width: 40%;
 }
 
-.textAreab64 .mainTitle h2{
-  color: #E8F9FD;
-  background-color: #e23821;
+.textAreab64 .mainTitle h2 {
+  color: #e8f9fd;
+  background-color: #384d32;
 }
 
-.textAreab64 .textEncode h4{
-  color: #E8F9FD;
+.textAreab64 .textEncode h4 {
+  color: #e8f9fd;
 }
-
-
