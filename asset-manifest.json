@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/multicifrado-b64-aes/static/css/main.fbae4c9d.css",
+    "main.js": "/multicifrado-b64-aes/static/js/main.5a8ca262.js",
+    "index.html": "/multicifrado-b64-aes/index.html",
+    "main.fbae4c9d.css.map": "/multicifrado-b64-aes/static/css/main.fbae4c9d.css.map",
+    "main.5a8ca262.js.map": "/multicifrado-b64-aes/static/js/main.5a8ca262.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbae4c9d.css",
+    "static/js/main.5a8ca262.js"
+  ]
+}
