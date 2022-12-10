@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/App.css";
 import { Textarea } from "evergreen-ui";
-import { decode as base64_decode, encode as base64_encode } from "base-64";
+import { encode as base64_encode } from "base-64";
 
 export default function EncodeB64() {
   const [summary, setSummary] = React.useState("");
@@ -9,7 +9,7 @@ export default function EncodeB64() {
   return (
     <div className="textAreab64">
       <div className="mainTitle">
-         <h2>Cifrador en Base64</h2>
+        <h2>Cifrador en Base64</h2>
       </div>
       <br></br>
       <Textarea

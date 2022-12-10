@@ -29,3 +29,18 @@ body {
 .textAreab64 .textEncode h4 {
   color: #e8f9fd;
 }
+
+.decodeB64 {
+  position: relative;
+  transform: translate(50%, -131.5%);
+}
+
+.encodeAreaAES {
+  position: relative;
+  transform: translate(0%, -100%);
+}
+
+.decodedAreaAES {
+  position: relative;
+  transform: translate(0%, -110%);
+}
