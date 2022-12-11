@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/App.css";
 import { Textarea } from "evergreen-ui";
 import * as CryptoJS from "crypto-js";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function EncodeAES() {
   const [summary, setSummary] = React.useState("");
@@ -32,7 +33,10 @@ export default function EncodeAES() {
       </div>
     );
   } else {
-    let encoded = CryptoJS.AES.encrypt(summary, summary2).toString();
+    let encoded = CryptoJS.AES.encrypt(
+      JSON.stringify(summary),
+      summary2
+    ).toString();
     return (
       <div className="encodeAreaAES">
         <div className="textAreab64">
@@ -46,6 +50,7 @@ export default function EncodeAES() {
             placeholder="Ingresa aquí el texto"
           />
           <Textarea
+            className="password1"
             width="40%"
             onChange={(e) => setSummary2(e.target.value)}
             placeholder="Ingresa aquí su contraseña"
@@ -54,6 +59,15 @@ export default function EncodeAES() {
           <div className="textEncode">
             <h4>Texto cifrado: {encoded}</h4>
           </div>
+          <CopyToClipboard text={encoded}>
+            <button>Copiar texto cifrado</button>
+          </CopyToClipboard>
+          <div className="textEncode2">
+            <h4>Contraseña: {summary2}</h4>
+          </div>
+          <CopyToClipboard className= "passwordButton" text={summary2}>
+          <button>Copiar contraseña</button>
+        </CopyToClipboard>
         </div>
       </div>
     );

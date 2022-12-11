@@ -18,12 +18,12 @@ export default function DecodeB64() {
         <Textarea
           width="40%"
           onChange={(e) => setSummary(e.target.value)}
-          placeholder="Ingresa aquí el texto cifrado"
+          placeholder="Pegue aquí el texto cifrado"
         />
         <Textarea
           width="40%"
           onChange={(e) => setSummary2(e.target.value)}
-          placeholder="Ingresa aquí su contraseña"
+          placeholder="Pegue aquí su contraseña copiada"
         />
         <br></br>
         <div className="textEncode">

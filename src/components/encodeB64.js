@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/App.css";
 import { Textarea } from "evergreen-ui";
 import { encode as base64_encode } from "base-64";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 
 export default function EncodeB64() {
   const [summary, setSummary] = React.useState("");
@@ -21,6 +23,9 @@ export default function EncodeB64() {
       <div className="textEncode">
         <h4>Texto cifrado: {encoded}</h4>
       </div>
+      <CopyToClipboard text={encoded}>
+          <button>Copiar texto cifrado</button>
+        </CopyToClipboard>
     </div>
   );
 }

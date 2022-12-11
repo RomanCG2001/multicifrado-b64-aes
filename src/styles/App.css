@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #497c61;
+  background-color: #2f302f;
 }
 
 .textAreab64 {
@@ -23,16 +23,22 @@ body {
 
 .textAreab64 .mainTitle h2 {
   color: #e8f9fd;
-  background-color: #384d32;
+  background-color: #992b2b;
 }
 
-.textAreab64 .textEncode h4 {
+.textAreab64 .textEncode, .textEncode2 h4 {
   color: #e8f9fd;
+  width: 40%;
+  word-wrap: break-word;
+  transform: translate(-75%, 0);
 }
 
+.encodeB64 {
+  position: static;
+}
 .decodeB64 {
-  position: relative;
-  transform: translate(50%, -131.5%);
+  position: static;
+  transform: translate(50%, -35vh);
 }
 
 .encodeAreaAES {
@@ -40,7 +46,27 @@ body {
   transform: translate(0%, -100%);
 }
 
+.encodeAreaAES .textEncode2 h4{
+  position: absolute;
+  transform: translate(93%, -10vh);
+  width: 40%;
+  word-wrap: break-word;
+
+}
+
 .decodedAreaAES {
   position: relative;
   transform: translate(0%, -110%);
+}
+
+button{
+  color: #e8f9fd;
+  background-color: #992b2b;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.passwordButton{
+  position: relative;
+  transform: translate(73vh, -4vh);
 }
